@@ -1,8 +1,7 @@
 Attribute VB_Name = "Module3"
 Option Explicit
-
 Sub CreateWorkbookandClose()
-
+’
 If MsgBox("エクスポートしますか？", vbYesNo) = vbYes Then
 Else: GoTo Continue
 End If
