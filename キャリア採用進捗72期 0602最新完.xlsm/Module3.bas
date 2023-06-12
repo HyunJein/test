@@ -3,7 +3,7 @@ Option Explicit
 
 Sub CreateWorkbookandClose()
 
-If MsgBox("ƒGƒNƒXƒ|[ƒg‚µ‚Ü‚·‚©H", vbYesNo) = vbYes Then
+If MsgBox("ã‚¨ã‚¯ã‚¹ãƒãƒ¼ãƒˆã—ã¾ã™ã‹ï¼Ÿ", vbYesNo) = vbYes Then
 Else: GoTo Continue
 End If
 Application.ScreenUpdating = False
@@ -23,27 +23,28 @@ Application.ScreenUpdating = False
     Cells(5, 3).CurrentRegion.Copy
     
     Workbooks.Add
-    
+â€™2023/06/12 ãƒ’ãƒ§ãƒ³ã‚¸ã‚§ã‚¤ãƒ³ã€€Git Test
+
     Cells(2, 2).PasteSpecial
     
     Columns("B:HH").AutoFit
     
-    ActiveSheet.Name = "WŒvŒ‹‰Ê"
+    ActiveSheet.Name = "é›†è¨ˆçµæœ"
     
-    ActiveWorkbook.SaveAs "C:\Users\" & U_Name & "\OneDrive - MICŠ”®‰ïĞ\ƒfƒXƒNƒgƒbƒv\" & "WŒvŒ‹‰Ê" & _
+    ActiveWorkbook.SaveAs "C:\Users\" & U_Name & "\OneDrive - MICæ ªå¼ä¼šç¤¾\ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—\" & "é›†è¨ˆçµæœ" & _
                                     Format(Now, "yyyy-MM-dd-hh-mm") & ".xlsm", _
                                     FileFormat:=xlOpenXMLWorkbookMacroEnabled, CreateBackup:=False
     
-    ' "C:\Users\" & U_Name & "\Desktop\" & "WŒvŒ‹‰Ê" & ".xlsm",
-    'C:\Users\j_hyun\OneDrive - MICŠ”®‰ïĞ\ƒfƒXƒNƒgƒbƒv
-'C:\Users\" & U_Name & "\OneDrive - MICŠ”®‰ïĞ\ƒfƒXƒNƒgƒbƒv
+    ' "C:\Users\" & U_Name & "\Desktop\" & "é›†è¨ˆçµæœ" & ".xlsm",
+    'C:\Users\j_hyun\OneDrive - MICæ ªå¼ä¼šç¤¾\ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—
+'C:\Users\" & U_Name & "\OneDrive - MICæ ªå¼ä¼šç¤¾\ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—
 
 
 ActiveWorkbook.Close
 
 Application.ScreenUpdating = True
 
-MsgBox "ƒfƒXƒNƒgƒbƒv‚ÉƒGƒNƒXƒ|[ƒgŠ®—¹‚µ‚Ü‚µ‚½B"
+MsgBox "ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ã«ã‚¨ã‚¯ã‚¹ãƒãƒ¼ãƒˆå®Œäº†ã—ã¾ã—ãŸã€‚"
 
 Continue:
 End Sub
