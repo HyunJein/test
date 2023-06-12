@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 Hello
+=======
+good morning
+>>>>>>> main
 こんにちは
