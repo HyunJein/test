@@ -2,7 +2,7 @@ Attribute VB_Name = "Module3"
 Option Explicit
 
 Sub CreateWorkbookandClose()
-    'test
+
 If MsgBox("エクスポートしますか？", vbYesNo) = vbYes Then
 Else: GoTo Continue
 End If
@@ -23,8 +23,7 @@ Application.ScreenUpdating = False
     Cells(5, 3).CurrentRegion.Copy
     
     Workbooks.Add
-’2023/06/12 ヒョンジェイン　Git Test
-
+    
     Cells(2, 2).PasteSpecial
     
     Columns("B:HH").AutoFit
